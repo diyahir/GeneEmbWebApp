@@ -1,0 +1,11 @@
+#Parameters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+#inputs{
+    display: flex;
+    flex-direction: row;
+} */

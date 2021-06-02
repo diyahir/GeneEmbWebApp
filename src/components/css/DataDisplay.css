@@ -1,0 +1,7 @@
+#DataDisplay{
+    display: flex;
+    flex-direction: row;
+    max-height: 70%;
+    height: 400px;
+    justify-content: center;
+}

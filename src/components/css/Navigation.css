@@ -1,0 +1,8 @@
+#NavBar{
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: flex-end;
+}
+#title{
+    margin-right: 10%;
+}

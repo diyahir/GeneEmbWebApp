@@ -1,0 +1,13 @@
+#GeneSetTable{
+    overflow-y:auto;
+    overflow-wrap:break-word;
+    word-wrap: break-word;
+    max-height: 300px;
+    display: flex;
+    table-layout: auto;
+}
+
+.GeneSetRow{
+    word-wrap: break-word;
+
+}
