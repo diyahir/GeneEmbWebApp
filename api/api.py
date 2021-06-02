@@ -22,7 +22,6 @@ def getDatabases():
     print('getting databases : ')
 
     WORKINGDIR = os.getcwd()
-
     DIRECTORY = WORKINGDIR+'/GMTDataBases'
     databaseDict = {}
 
