@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { DataInput } from './DataInput';
 import {DataDisplay} from './DataDisplay'
 
@@ -14,7 +14,7 @@ const Home = ( ) => {
   const [databases, setDatabases] = useState();
 
   
-  if (databases === undefined || databases.length == 0){
+  if (databases === undefined || databases.length === 0){
     getDatabases()
   }
 

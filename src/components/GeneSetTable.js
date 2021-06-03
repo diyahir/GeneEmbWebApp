@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, { useRef } from 'react';
 import {GeneSetRow} from './GeneSetRow';
 import {Container} from 'semantic-ui-react';
 import './css/GeneSetTable.css'

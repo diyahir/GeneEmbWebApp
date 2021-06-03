@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState} from 'react';
 import { Container } from 'semantic-ui-react';
 import { VictoryChart, VictoryLegend, VictoryAxis, VictoryScatter, VictoryTooltip} from "victory";
 
@@ -66,7 +66,7 @@ export const TSNEChart = ({geneData, geneSet, activeSet, setGeneData, releventGe
 
             var gene = geneData[geneInd]
             
-            if (gene['Relevant'] == 1){
+            if (gene['Relevant'] === 1){
                 gene['Stroke'] = 'red'
                 gene['Opacity'] = 0.7
             }

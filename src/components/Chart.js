@@ -1,5 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
-import { Container } from 'semantic-ui-react';
+import React, {useRef} from 'react';
 import { VictoryChart, VictoryAxis,VictoryVoronoiContainer, VictoryScatter, VictoryTooltip} from "victory";
 
 export const Chart = ({pairWiseData, loading, setPairWiseData, setActiveSet }) =>{

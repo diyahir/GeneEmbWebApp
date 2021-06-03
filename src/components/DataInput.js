@@ -33,15 +33,6 @@ export const DataInput = ({setPairWiseData, setLoading, setGeneData,
         {text:'Gene2Vec', value:2}
     ]
 
-    const Databases = [
-        {text:'MsigDB', value:1},
-        {text:'Pathway25', value:2},
-        {text:'GO', value:3},
-        {text:'WikiPathways', value:4}
-
-    ]
-
-
     function handleDBChange(e, {value} ){
         setActiveDBs(value)
     }
@@ -120,14 +111,14 @@ export const DataInput = ({setPairWiseData, setLoading, setGeneData,
             response.json().then( data=> {
                 const errorCase = JSON.parse(data['Error'])
 
-                if (errorCase == 0){
+                if (errorCase === 0){
                     // All genes are good
                     setPairWiseData(JSON.parse(data['pairWiseData']))
                     setReleventGeneData(JSON.parse(data['releventGeneData']))
                     setGeneData(JSON.parse(data['genesData']))      
                     // console.log(pairWiseData)
                 }
-                else if(errorCase == 1){
+                else if(errorCase === 1){
                     // Contains some invalid genes 
                     setPairWiseData(JSON.parse(data['pairWiseData']))
                     setReleventGeneData(JSON.parse(data['releventGeneData']))
@@ -135,7 +126,7 @@ export const DataInput = ({setPairWiseData, setLoading, setGeneData,
                     setInvalidGenes(data['InvalidGenes'])
                     setErrorFound(true)
                 }
-                else if(errorCase == 2){
+                else if(errorCase === 2){
                     // No genes are valid 
                     setInvalidGenes(data['InvalidGenes'])
                     setErrorFound(true)

@@ -1,6 +1,6 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React from 'react';
 import { Container } from 'semantic-ui-react';
-import {Chart} from './Chart';
+import { Chart } from './Chart';
 import { GeneSetTable } from './GeneSetTable';
 import './css/DataDisplay.css';
 import LoadingMask from 'react-loadingmask';
@@ -31,7 +31,6 @@ export const DataDisplay = ({pairWiseData,
                 <GeneSetTable pairWiseData={pairWiseData} 
                 setActiveSet={setActiveSet} 
                 setPairWiseData={setPairWiseData}
-                pairWiseData={pairWiseData}
                 querySet={geneSet}/>
             </Container>
         </LoadingMask>

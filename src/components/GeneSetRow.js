@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useRef} from 'react';
 import { Collapse } from '@material-ui/core';
 import './css/GeneSetTable.css'
 
