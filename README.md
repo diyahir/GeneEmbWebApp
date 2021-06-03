@@ -14,11 +14,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 You will also need to run the flask server in a different terminal from the project directory:
 Make sure you have a python envoirnment activated with the dependencies.
 
-### 'export FLASK_ENV=development'
+### `export FLASK_ENV=development`
 
-### 'export FLASK_APP=api.py'
+### `export FLASK_APP=api.py`
 
-### 'yarn start-api'
+### `yarn start-api`
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
