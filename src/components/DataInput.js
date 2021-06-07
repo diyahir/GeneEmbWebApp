@@ -99,7 +99,7 @@ export const DataInput = ({setPairWiseData, setLoading, setGeneData,
         }
         setLoading(true);
 
-        const response = await fetch('/getPairWiseData', {
+        const response = await fetch('/api/getPairWiseData', {
             method:'POST',
             headers: {
                 'Content-Type': 'application/json'

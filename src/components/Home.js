@@ -20,7 +20,7 @@ const Home = ( ) => {
 
   async function getDatabases(){
 
-    const response = await fetch('/getDatabases', {
+    const response = await fetch('/api/getDatabases', {
         method:'POST',
         headers: {
             'Content-Type': 'application/json'

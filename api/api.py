@@ -12,12 +12,8 @@ import os
 
 app = Flask(__name__)
 
-@app.route('/time')
-def get_current_time():
-    return {'time': time.time()}
 
-
-@app.route('/getDatabases',methods=['POST','GET'])
+@app.route('/api/getDatabases',methods=['POST','GET'])
 def getDatabases():
     print('getting databases : ')
 
@@ -35,7 +31,7 @@ def getDatabases():
 
     return databaseDict
 
-@app.route('/getPairWiseData',methods=['POST','GET'])
+@app.route('/api/getPairWiseData',methods=['POST','GET'])
 def getPairWiseData():
     # End point to recieve data to produce both Scoring Comparison plot and the TSNE plot
 
