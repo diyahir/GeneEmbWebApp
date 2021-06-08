@@ -41,37 +41,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `yarn eject`
 
-## Deploying to Production:
-
-Deploying to production follows a similar process as deploying locally, but there are a few key differences.
-
-### Running Flask server:
-
-1. Navigate to the project directory
-2. Navigate to api subdirectory
-3. Activate python virtual env
-
-### `source venv/bin/activate`
-
-4. Start gunicorn server
-
-### `gunicorn -b :5000 --timeout 600 api:app`
-
-### Running React host:
-
-1. Navigate to the project directory
-2. Build the project if any changes have occured
-
-### `yarn build`
-
-3. Start Host
-
-### `serve -l 3000 -s build`
-
-4. Verify that the site ( http://aws2.zhang-lab.org:5000/ ) is live and operational by running the Sample Run
-
-
-
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
@@ -103,6 +72,36 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
+
+## Deploying to Production:
+
+Deploying to production follows a similar process as deploying locally, but there are a few key differences.
+
+### Running Flask server:
+
+1. Navigate to the project directory
+2. Navigate to api subdirectory
+3. Activate python virtual env
+
+### `source venv/bin/activate`
+
+4. Start gunicorn server
+
+### `gunicorn -b :5000 --timeout 600 api:app`
+
+### Running React host:
+
+1. Navigate to the project directory
+2. Build the project if any changes have occured
+
+### `yarn build`
+
+3. Start Host
+
+### `serve -l 3000 -s build`
+
+4. Verify that the site ( http://aws2.zhang-lab.org:5000/ ) is live and operational by running the Sample Run
+
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
