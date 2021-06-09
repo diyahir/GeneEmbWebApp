@@ -66,7 +66,7 @@ export const GeneSetRow = ({geneSet, setActiveSet, pairWiseData, setPairWiseData
                 <td>{getRoundedScore(geneSet.Score)}</td>
                 <td>{geneSet.GeneSetName}</td>
                 <td>{geneSet.GeneSetDescription}</td>
-                <td>{geneSet.PVal}</td>
+                <td>{geneSet.PVal.toExponential()}</td>
             </tr>
 
             <tr style={{ padding: 0}}>
