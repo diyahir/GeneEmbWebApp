@@ -87,7 +87,7 @@ Deploying to production follows a similar process as deploying locally, but ther
 
 4. Start gunicorn server
 
-### `gunicorn -b :5000 --timeout 600 api:app`
+### `gunicorn -b :5000 --timeout -w 12 600 api:app`
 
 ### Running React host:
 
